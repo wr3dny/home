@@ -1,0 +1,6 @@
+.container{
+    display: flex;
+    justify-content: center;
+    color: blueviolet;
+    border: 1px solid grey
+}
