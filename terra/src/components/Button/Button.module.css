@@ -1,0 +1,12 @@
+.button{
+    border: 1px solid black;
+    width: 150px;
+}
+
+.button.orange{
+    background-color: orange;
+}
+
+.button.green{
+    background-color: green;
+}
