@@ -1,7 +1,6 @@
 .container {
     border: 2px solid blue;
     display: flex;
-    background-color: black;
 }
 
 .dates{

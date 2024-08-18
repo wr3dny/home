@@ -1,21 +1,14 @@
-import { Button } from '../Button/Button';
-import styles from './Work.module.css';
-import { useState } from 'react';
+import { history} from '../../consts/work'
+import styles from './Work.module.css'
 
-export const Work = () => {
-    const [isNew, setIsNew] = useState<string>('orange');
 
-    const handleClick = () => {
-        if (isNew === 'orange') {
-            setIsNew('blue');
-        } else {
-            setIsNew('orange');
-        }
-    };
+
+export const Work = ()=> {
+    const sortedWorkplaces = [...history].sort((a,b) => b.id - a.id)
 
     return (
         <div className={styles.container}>
-            <Button label='color' onClick={handleClick} color={isNew} />
+            <div className={styles.work}>{sortedWorkplaces.map((work)=> work.id)}</div>
         </div>
-    );
-};
+    )
+}
