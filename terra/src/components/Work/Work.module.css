@@ -1,12 +1,33 @@
-.container {
-    border: 2px solid blue;
+.group {
     display: flex;
 }
 
-.dates{
-    width: 20%;
+.date{
+    padding: 0 10px;
+    font-weight: bold;
+    width: 150px;
 }
 
-.work {
-    width: 80%;
+.place {
+    font-weight: bold;
+    align-items: left;
+}
+
+.position {
+    display: flex;
+    align-items: left;
+}
+
+.description {
+    font-weight: normal;
+    align-items: left;
+}
+
+.visible {
+    display: block;
+    font-weight: normal;
+}
+
+.hidden {
+    display: none;
 }

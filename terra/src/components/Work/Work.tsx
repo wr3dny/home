@@ -1,14 +1,23 @@
-import { history} from '../../consts/work'
 import styles from './Work.module.css'
 
-
-
-export const Work = ()=> {
-    const sortedWorkplaces = [...history].sort((a,b) => b.id - a.id)
-
-    return (
-        <div className={styles.container}>
-            <div className={styles.work}>{sortedWorkplaces.map((work)=> work.id)}</div>
-        </div>
-    )
+interface Props {
+    possition:string,
+    company:string,
+    description: string,
+    from: string,
+    to: string
 }
+
+export const Work = ({ possition, company, from, to, description }: Props) => {
+    return (
+      <div className={styles.group}>
+        <div className={styles.date}>
+          {from}{to && ` - ${to}`}
+        </div>
+        <div className={styles.place}>
+            <div className={styles.position}>{possition}</div>
+            <div className={styles.description}>{description}</div>
+        </div>
+      </div>
+    );
+  };
