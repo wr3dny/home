@@ -1,0 +1,27 @@
+.container{
+    padding: 10px;
+}
+
+.header {
+    font-size: large;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.ul {
+    list-style-type: none;
+    padding: 0 10px; 
+}
+
+.li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px; 
+}
+
+.icon {
+    margin-right: 8px; 
+    font-size: 1rem; 
+}
+
+
