@@ -35,3 +35,41 @@ export const history = [
         to: ''
     }
 ]
+
+export const learning = [
+    {
+        id: 1,
+        name: 'Podstawy Pythona',
+        school: 'Code:Me',
+        dates: '05-07.2022',
+        description: 'Kurs podstawowy Pythona'
+    },
+    {
+        id: 2,
+        name: 'Podstawy Pythona',
+        school: 'Code:Me',
+        dates: '05-07.2022',
+        description: 'Kurs podstawowy Pythona'
+    },
+    {
+        id: 3,
+        name: 'Podstawy Pythona',
+        school: 'Code:Me',
+        dates: '05-07.2022',
+        description: 'Kurs podstawowy Pythona'
+    },
+    {
+        id: 4,
+        name: 'Podstawy Pythona',
+        school: 'Code:Me',
+        dates: '05-07.2022',
+        description: 'Kurs podstawowy Pythona'
+    },
+    {
+        id: 5,
+        name: 'Javascript XXL',
+        school: 'ALX',
+        dates: '03-05.2022023',
+        description: 'jak w tytule'
+    },
+]

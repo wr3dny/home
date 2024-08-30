@@ -4,9 +4,10 @@ import { Work } from '../../components/Work/Work';
 import { history } from '../../consts/work';
 import styles from './Resume.module.css';
 import { useTranslation } from "react-i18next";
+import { footerText } from '../../consts/text';
+import { Learning } from '../../components/Learning/Learning';
 
 export const Resume = () => {
-    const footerDescription = 'Ipsum lorem';
 
     const { t } = useTranslation();
 
@@ -41,8 +42,11 @@ export const Resume = () => {
                         />
                     ))}
                 </div>
+                <div>
+                    <Learning/>
+                </div>
                 <div className={styles.footer}>
-                    <Footer text={footerDescription} />
+                    <Footer text={footerText} />
                 </div>
             </div>
         </div>
