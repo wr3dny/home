@@ -13,7 +13,10 @@ export const Learning = ({name, school, dates, description}:Props) =>{
             <div className={styles.dates}>
                 {dates}
             </div>
-            
+            <div className={styles.right}>
+                <div className={styles.name}>{name} w {school}</div>
+                <div className={styles.description}>{description}</div>
+            </div>          
         </div>
     )
 }

@@ -12,6 +12,7 @@ export const Resume = () => {
     const { t } = useTranslation();
 
     const sortedWork = [...history].sort((a, b) => b.id - a.id);
+    const skills = ['python', 'jira', 'typescript']
 
 
     return (
@@ -20,7 +21,11 @@ export const Resume = () => {
                 <div className={styles.sidebar}>
                     <div className={styles.img} />
                     <div className={styles.contact}>Contact</div>
-                    <div className={styles.skills}>Skills</div>
+                    {/* <div className={styles.skills}>
+                        {skills.map((skill)=>{
+                            
+                        })}
+                    </div> */}
                 </div>
                 <div className={styles.description}>
                     <DescriptionField 
@@ -42,8 +47,19 @@ export const Resume = () => {
                         />
                     ))}
                 </div>
-                <div>
-                    <Learning/>
+                {/* <div className={styles.learning}>
+                    {soertedLearning.map((learning) => (
+                        <Learning
+                            key={learning.id}
+                            dates={learning.dates}
+                            description={learning.description}
+                            name={t(learning.name)}
+                            school={t(learning.school)}
+                        />
+                    ))}
+                </div> */}
+                <div className={styles.learning}>
+                    <Learning name='Python' school='Code:Me' dates='05-07.2022' description='Basic course'/>
                 </div>
                 <div className={styles.footer}>
                     <Footer text={footerText} />
