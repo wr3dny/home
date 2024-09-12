@@ -69,7 +69,7 @@ export const learning = [
         id: 5,
         name: 'Javascript XXL',
         school: 'ALX',
-        dates: '03-05.2022023',
+        dates: '03-05.2023',
         description: 'jak w tytule'
     },
 ]

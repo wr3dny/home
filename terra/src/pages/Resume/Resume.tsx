@@ -1,7 +1,7 @@
 import { DescriptionField } from '../../components/DescriptionField/DecriptionField';
 import { Footer } from '../../components/Footer/Footer';
 import { Work } from '../../components/Work/Work';
-import { history } from '../../consts/work';
+import { history, learning } from '../../consts/work';
 import styles from './Resume.module.css';
 import { useTranslation } from "react-i18next";
 import { footerText } from '../../consts/text';
@@ -12,7 +12,7 @@ export const Resume = () => {
     const { t } = useTranslation();
 
     const sortedWork = [...history].sort((a, b) => b.id - a.id);
-    const skills = ['python', 'jira', 'typescript']
+    const sortedLearning = [...learning].sort((a,b)=> b.id - a.id)
 
 
     return (
@@ -47,8 +47,8 @@ export const Resume = () => {
                         />
                     ))}
                 </div>
-                {/* <div className={styles.learning}>
-                    {soertedLearning.map((learning) => (
+                <div className={styles.learning}>
+                    {sortedLearning.map((learning) => (
                         <Learning
                             key={learning.id}
                             dates={learning.dates}
@@ -57,9 +57,6 @@ export const Resume = () => {
                             school={t(learning.school)}
                         />
                     ))}
-                </div> */}
-                <div className={styles.learning}>
-                    <Learning name='Python' school='Code:Me' dates='05-07.2022' description='Basic course'/>
                 </div>
                 <div className={styles.footer}>
                     <Footer text={footerText} />
