@@ -99,6 +99,6 @@ export const tech = [
     }
 ]
 
-export const skills = [
+export const skll = [
     'umiejętność szybkiego przyswajania wiedzy', 'zdolność do pracy zarówno w zespole jak i samodzielnie', 'umiejętność pracy pod presja czasu'
 ]

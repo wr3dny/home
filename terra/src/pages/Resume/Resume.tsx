@@ -1,12 +1,13 @@
 import { DescriptionField } from '../../components/DescriptionField/DecriptionField';
 import { Footer } from '../../components/Footer/Footer';
 import { Work } from '../../components/Work/Work';
-import { history, training } from '../../consts/resume';
+import { history, training, tech, skll } from '../../consts/resume';
 import styles from './Resume.module.css';
 import { useTranslation } from "react-i18next";
 import { footerText } from '../../consts/text';
 import { Training } from '../../components/Training/Training';
 import { Skills } from '../../components/Skills/Skills';
+
 
 
 export const Resume = () => {
@@ -25,6 +26,7 @@ export const Resume = () => {
                     <div className={styles.contact}>Contact</div>
                     <div className={styles.skills}>
                         <Skills name='skill' experience='not high' skill='some skill'/>
+                        
                     </div>
                 </div>
                 <div className={styles.description}>
