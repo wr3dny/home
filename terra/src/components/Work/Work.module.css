@@ -5,8 +5,7 @@
 .date{
     padding: 0 10px;
     font-weight: bold;
-    width: 150px;
-}
+    width: 150px;}
 
 .place {
     font-weight: bold;
@@ -15,7 +14,7 @@
 
 .position {
     display: flex;
-    align-items: left;
+
 }
 
 .description {
@@ -30,4 +29,8 @@
 
 .hidden {
     display: none;
+}
+
+.links {
+    font-weight: normal;
 }

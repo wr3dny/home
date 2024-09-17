@@ -20,16 +20,13 @@ export const Work = ({ position, company, from, to, description, addDesc1 = "", 
                 {to && ` - ${to}`}
             </div>
             <div className={styles.place}>
-                <div className={styles.position}>{position}</div>
-                <div className={styles.company}>{company}</div>
+                <div className={styles.position}>{position} w {company}</div>
                 <div className={styles.description}>{description}</div>
-                <div>
-            <ul className={classNames({ 'visible': addDesc1 || addDesc2 || addDesc3, 'hidden': !addDesc1 && !addDesc2 && !addDesc3 })}>
-              {addDesc1 && <li>{addDesc1}</li>}
-              {addDesc2 && <li>{addDesc2}</li>}
-              {addDesc3 && <li>{addDesc3}</li>}
-            </ul>
-          </div>
+                <ul className={classNames(styles.links, { visible: addDesc1 || addDesc2 || addDesc3, hidden: !addDesc1 && !addDesc2 && !addDesc3 })}>
+                    {addDesc1 && <li>{addDesc1}</li>}
+                    {addDesc2 && <li>{addDesc2}</li>}
+                    {addDesc3 && <li>{addDesc3}</li>}
+                </ul>
             </div>
         </div>
     );

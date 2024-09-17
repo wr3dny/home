@@ -44,6 +44,10 @@ export const Resume = () => {
                             description={work.description}
                             position={t(work.position)}
                             company={t(work.company)}
+                            addDesc1={work.addDesc1}
+                            addDesc2={work.addDesc2}
+                            addDesc3={work.addDesc3}
+
                         />
                     ))}
                 </div>

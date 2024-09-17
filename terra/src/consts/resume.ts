@@ -13,16 +13,17 @@ export const history = [
         company: 'Antra - Pracowania projektowa',
         from: '07.2013',
         to: '02.2023',
-        description: 'Samodzielna praca na stanowsiku projektanta ( po uzyskaniu uprawnień projektowych i wykonawczych ) podczas kompleksowego przygotowywania dokumentacji technicznej w zakresie:',   
-        addDesc1: '•	Ustalanie w kooperacji z pozostałymi branżami najefektywniejszego układu konstrukcji',
-        addDesc2: '•	Wprowadzanie ustaleń po uprzednio wykonanych obliczeniach zmian w projekcie ',
-        adddesc3: '•	Współpraca z budowami w fazie wykonawczej w zakresie optymalizacji procesu budowlanego '
+        description: 'Samodzielna praca na stanowsiku projektanta ( po uzyskaniu uprawnień projektowych i wykonawczych ) :',   
+        // description: 'Samodzielna praca na stanowsiku projektanta ( po uzyskaniu uprawnień projektowych i wykonawczych ) podczas kompleksowego przygotowywania dokumentacji technicznej w zakresie:',   
+        addDesc1: 'Ustalanie w kooperacji z pozostałymi branżami najefektywniejszego układu konstrukcji',
+        addDesc2: 'Wprowadzanie ustaleń po uprzednio wykonanych obliczeniach zmian w projekcie',
+        addDesc3: 'Współpraca z budowami w fazie wykonawczej w zakresie optymalizacji procesu budowlanego'
     },
     {
         id:3,
         position: 'Stażysta',
         company: 'Silky Coders sp. z o.o.',
-        description: 'Wdrażenie projektu',
+        description: 'Praca przy aplikacji do przesyłu i zarządzania towarami w obrocie firmy',
         from: '06.2023',
         to: '12.2023'
     },
@@ -30,7 +31,7 @@ export const history = [
         id:4,
         position: 'Junior FrontEnd Developer',
         company: 'Silky Coders sp. z o.o.',
-        description: 'Wdrażenie projektu',
+        description: 'Wdrażenie projektu kas samoobsługowych dla marki Sinsay',
         from: '01.2024',
         to: ''
     }
