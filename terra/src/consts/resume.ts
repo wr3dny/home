@@ -36,40 +36,68 @@ export const history = [
     }
 ]
 
-export const learning = [
+export const training = [
     {
         id: 1,
-        name: 'Podstawy Pythona',
+        name: 'Python od podstaw',
         school: 'Code:Me',
         dates: '05-07.2022',
-        description: 'Kurs podstawowy Pythona'
+        houres: '72h',
+        description: 'Poznanie języka Python w zakresie tworzenia skryptów(pętle, wstęp do OOP)'
     },
     {
         id: 2,
-        name: 'Podstawy Pythona',
+        name: 'Data Science',
         school: 'Code:Me',
-        dates: '05-07.2022',
-        description: 'Kurs podstawowy Pythona'
+        dates: '07.2022',
+        houres: '12h',
+        description: 'Wstępne zagadnienia'
     },
     {
         id: 3,
-        name: 'Podstawy Pythona',
+        name: 'Front-End Developer [React]',
         school: 'Code:Me',
-        dates: '05-07.2022',
-        description: 'Kurs podstawowy Pythona'
+        dates: '10.2022 - 02.2023',
+        houres: '100h',
+        description: 'Html + css z javascript\'em i wprowadzeniem do React\'a'
     },
     {
         id: 4,
-        name: 'Podstawy Pythona',
+        name: 'SQL od podstaw',
         school: 'Code:Me',
-        dates: '05-07.2022',
-        description: 'Kurs podstawowy Pythona'
+        dates: '03-04.2023',
+        houres: '27h',
+        description: 'Kurs wprowadzający do pracy z bazami danych'
     },
     {
         id: 5,
         name: 'Javascript XXL',
         school: 'ALX',
         dates: '03-05.2023',
-        description: 'jak w tytule'
+        houres: '160h',
+        description: 'Javascript w rozszerzonym zakresie wraz z wybranymi framework\'ami i bibliotekami'
     },
+]
+
+export const tech = [
+    {
+        lang: 'Python',
+        experience: 'hobby'
+    },
+    {
+        lang: 'Typescript',
+        experience: '1 rok komercyjnie'
+    },
+    {
+        lang: 'React',
+        experience: '1 rok komercyjnie'
+    },
+    {
+        lang: 'Jira',
+        experience: '1 rok komercyjnie'
+    }
+]
+
+export const skills = [
+    'umiejętność szybkiego przyswajania wiedzy', 'zdolność do pracy zarówno w zespole jak i samodzielnie', 'umiejętność pracy pod presja czasu'
 ]

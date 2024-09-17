@@ -1,4 +1,4 @@
-import styles from './Learning.module.css'
+import styles from './Training.module.css'
 
 interface Props {
     name: string,
@@ -7,7 +7,7 @@ interface Props {
     description: string
 }
 
-export const Learning = ({name, school, dates, description}:Props) =>{
+export const Training = ({name, school, dates, description}:Props) =>{
     return (
         <div className={styles.container}>
             <div className={styles.dates}>

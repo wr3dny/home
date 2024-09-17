@@ -1,18 +1,20 @@
 import { DescriptionField } from '../../components/DescriptionField/DecriptionField';
 import { Footer } from '../../components/Footer/Footer';
 import { Work } from '../../components/Work/Work';
-import { history, learning } from '../../consts/work';
+import { history, training } from '../../consts/resume';
 import styles from './Resume.module.css';
 import { useTranslation } from "react-i18next";
 import { footerText } from '../../consts/text';
-import { Learning } from '../../components/Learning/Learning';
+import { Training } from '../../components/Training/Training';
+import { Skills } from '../../components/Skills/Skills';
+
 
 export const Resume = () => {
 
     const { t } = useTranslation();
 
     const sortedWork = [...history].sort((a, b) => b.id - a.id);
-    const sortedLearning = [...learning].sort((a,b)=> b.id - a.id)
+    const sortedTraining = [...training].sort((a,b)=> b.id - a.id)
 
 
     return (
@@ -21,11 +23,9 @@ export const Resume = () => {
                 <div className={styles.sidebar}>
                     <div className={styles.img} />
                     <div className={styles.contact}>Contact</div>
-                    {/* <div className={styles.skills}>
-                        {skills.map((skill)=>{
-                            
-                        })}
-                    </div> */}
+                    <div className={styles.skills}>
+                        <Skills name='skill' experience='not high' skill='some skill'/>
+                    </div>
                 </div>
                 <div className={styles.description}>
                     <DescriptionField 
@@ -47,14 +47,14 @@ export const Resume = () => {
                         />
                     ))}
                 </div>
-                <div className={styles.learning}>
-                    {sortedLearning.map((learning) => (
-                        <Learning
-                            key={learning.id}
-                            dates={learning.dates}
-                            description={learning.description}
-                            name={t(learning.name)}
-                            school={t(learning.school)}
+                <div className={styles.training}>
+                    {sortedTraining.map((training) => (
+                        <Training
+                            key={training.id}
+                            dates={training.dates}
+                            description={training.description}
+                            name={t(training.name)}
+                            school={t(training.school)}
                         />
                     ))}
                 </div>
