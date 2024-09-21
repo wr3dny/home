@@ -7,6 +7,7 @@ import { useTranslation } from "react-i18next";
 import { footerText } from '../../consts/text';
 import { Training } from '../../components/Training/Training';
 import { Skills } from '../../components/Skills/Skills';
+import { Button } from '../../components/Button/Button';
 
 
 
@@ -20,6 +21,9 @@ export const Resume = () => {
 
     return (
         <div className={styles.resume}>
+            <div>
+                <Button />
+            </div>
             <div className={styles.container}>
                 <div className={styles.sidebar}>
                     <div className={styles.img} />
