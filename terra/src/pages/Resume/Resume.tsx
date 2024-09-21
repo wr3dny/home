@@ -21,9 +21,6 @@ export const Resume = () => {
 
     return (
         <div className={styles.resume}>
-            <div>
-                <Button />
-            </div>
             <div className={styles.container}>
                 <div className={styles.sidebar}>
                     <div className={styles.img} />
