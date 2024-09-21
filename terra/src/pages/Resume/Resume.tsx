@@ -20,7 +20,7 @@ export const Resume = () => {
 
 
     return (
-        <div className={styles.resume}>
+        <div className={styles.resume}>   
             <div className={styles.container}>
                 <div className={styles.sidebar}>
                     <div className={styles.img} />

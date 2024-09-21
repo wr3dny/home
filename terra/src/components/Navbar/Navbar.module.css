@@ -1,0 +1,25 @@
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: red;
+    list-style: none;
+}
+
+.main .weekend {
+    background-color: blue;
+}
+
+.link{
+    color: yellow;
+    text-decoration: none;
+}
+
+.link:visited {
+    color: yellow;
+    text-decoration: none;
+}
+.link:hover, .link:active {
+    color: orange;
+    text-decoration: underline;
+  }

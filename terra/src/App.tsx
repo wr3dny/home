@@ -1,10 +1,27 @@
 import './App.css';
-import { Resume } from './pages/Resume/Resume';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import i18n from './i18n';
+import { useTranslation } from 'react-i18next';
+import { PATHS } from './consts/paths';
+import { Navbar } from './components/Navbar/Navbar';
 
-function App() {
+export const App = () => {
+  const { t } = useTranslation();
+
+  const changeLanguage = (lng: string) => {
+    i18n.changeLanguage(lng);
+  };
+
   return (
-    <Resume />
+    <Router>
+      <div>
+        <Navbar />
+        <Routes>
+          {PATHS.map(({ key, path, Component }) => (
+            <Route key={key} path={path} element={<Component />} />
+          ))}
+        </Routes>
+      </div>
+    </Router>
   );
-}
-
-export default App;
+};
