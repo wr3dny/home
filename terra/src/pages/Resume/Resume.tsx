@@ -17,6 +17,7 @@ export const Resume = () => {
 
     const sortedWork = [...history].sort((a, b) => b.id - a.id);
     const sortedTraining = [...training].sort((a,b)=> b.id - a.id)
+    const sortedTech = [...tech].sort((a,b)=> b.experience - a.experience)
 
 
     return (
@@ -62,6 +63,7 @@ export const Resume = () => {
                             description={training.description}
                             name={t(training.name)}
                             school={t(training.school)}
+                            hours={training.hours}
                         />
                     ))}
                 </div>

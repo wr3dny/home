@@ -43,7 +43,7 @@ export const training = [
         name: 'Python od podstaw',
         school: 'Code:Me',
         dates: '05-07.2022',
-        houres: '72h',
+        hours: '72h',
         description: 'Poznanie języka Python w zakresie tworzenia skryptów(pętle, wstęp do OOP)'
     },
     {
@@ -51,7 +51,7 @@ export const training = [
         name: 'Data Science',
         school: 'Code:Me',
         dates: '07.2022',
-        houres: '12h',
+        hours: '12h',
         description: 'Wstępne zagadnienia'
     },
     {
@@ -59,7 +59,7 @@ export const training = [
         name: 'Front-End Developer [React]',
         school: 'Code:Me',
         dates: '10.2022 - 02.2023',
-        houres: '100h',
+        hours: '100h',
         description: 'Html + css z javascript\'em i wprowadzeniem do React\'a'
     },
     {
@@ -67,7 +67,7 @@ export const training = [
         name: 'SQL od podstaw',
         school: 'Code:Me',
         dates: '03-04.2023',
-        houres: '27h',
+        hours: '27h',
         description: 'Kurs wprowadzający do pracy z bazami danych'
     },
     {
@@ -75,7 +75,7 @@ export const training = [
         name: 'Javascript XXL',
         school: 'ALX',
         dates: '03-05.2023',
-        houres: '160h',
+        hours: '160h',
         description: 'Javascript w rozszerzonym zakresie wraz z wybranymi framework\'ami i bibliotekami'
     },
 ]
@@ -83,19 +83,19 @@ export const training = [
 export const tech = [
     {
         lang: 'Python',
-        experience: 'hobby'
+        experience: 0
     },
     {
         lang: 'Typescript',
-        experience: '1 rok komercyjnie'
+        experience: 1
     },
     {
         lang: 'React',
-        experience: '1 rok komercyjnie'
+        experience: 1
     },
     {
         lang: 'Jira',
-        experience: '1 rok komercyjnie'
+        experience: 1
     }
 ]
 
