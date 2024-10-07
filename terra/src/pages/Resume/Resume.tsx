@@ -6,8 +6,8 @@ import styles from './Resume.module.css';
 import { useTranslation } from "react-i18next";
 import { footerText } from '../../consts/text';
 import { Training } from '../../components/Training/Training';
-import { Skills } from '../../components/Skills/Skills';
-import { Button } from '../../components/Button/Button';
+import { Skills, Tech } from '../../components/Skills/Skills';
+
 
 
 
@@ -17,7 +17,13 @@ export const Resume = () => {
 
     const sortedWork = [...history].sort((a, b) => b.id - a.id);
     const sortedTraining = [...training].sort((a,b)=> b.id - a.id)
-    const sortedTech = [...tech].sort((a,b)=> b.experience - a.experience)
+    const groupedByExperience = tech.reduce((acc: Record<number, string[]>, { lang, experience }) => {
+        if (!acc[experience]) {
+          acc[experience] = [];
+        }
+        acc[experience].push(lang);
+        return acc;
+      }, {});
 
 
     return (
@@ -27,9 +33,13 @@ export const Resume = () => {
                     <div className={styles.img} />
                     <div className={styles.contact}>Contact</div>
                     <div className={styles.skills}>
-                        <Skills name='skill' experience='not high' skill='some skill'/>
-                        
+                        <Skills  skill='some skill'/>                        
                     </div>
+                    <div className={styles.skills}>
+      {Object.keys(groupedByExperience).map((exp) => (
+        <Tech key={exp} experience={Number(exp)} langs={groupedByExperience[Number(exp)]} />
+      ))}
+    </div>
                 </div>
                 <div className={styles.description}>
                     <DescriptionField 
