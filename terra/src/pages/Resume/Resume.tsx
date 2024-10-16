@@ -25,6 +25,9 @@ export const Resume = () => {
         return acc;
       }, {});
 
+      const sortedGroupedByExperience = Object.entries(groupedByExperience)
+  .sort(([experienceA], [experienceB]) => Number(experienceB) - Number(experienceA));
+
 
     return (
         <div className={styles.resume}>
@@ -36,7 +39,7 @@ export const Resume = () => {
                         <Skills  skill='some skill'/>                        
                     </div>
                     <div className={styles.skills}>
-      {Object.keys(groupedByExperience).map((exp) => (
+      {Object.keys(sortedGroupedByExperience).map((exp) => (
         <Tech key={exp} experience={Number(exp)} langs={groupedByExperience[Number(exp)]} />
       ))}
     </div>
@@ -84,3 +87,6 @@ export const Resume = () => {
         </div>
     );
 };
+
+
+

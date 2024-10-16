@@ -27,7 +27,7 @@ export const Tech = ({ experience, langs }: TechProp) => {
       <div className={styles.container}>
         <div className={styles.tech}>
           <h3>Umiejętności</h3>
-          <p>Experience Level: {experience} year(s)</p>
+          <p>Lata doświadczenia: {experience} </p>
           <ul>
             {langs.map((lang, index) => (
               <li key={index}>{lang}</li>
