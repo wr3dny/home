@@ -1,4 +1,4 @@
-export const Home2 = ()=> {
+export const Home = ()=> {
     return (
         <div>
             Here is my home page
