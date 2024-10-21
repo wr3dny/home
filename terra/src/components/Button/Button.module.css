@@ -1,12 +1,29 @@
 .button{
     border: 1px solid black;
     width: 150px;
+    cursor: pointer;
 }
 
-.button.orange{
+.Navbar{
+    background-color: black;
+    border-radius: 5px;
+    color: orange;
+    cursor: pointer;   
+    width: 150px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ul{
+    text-decoration: none;
+}
+
+.orange{
     background-color: orange;
 }
 
-.button.green{
+.green{
     background-color: green;
 }
